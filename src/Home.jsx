@@ -11,7 +11,7 @@ function App() {
       <div className="card">
         <h1>Reid's Book Market</h1>
         <p>Management App For Reid's Books</p>
-        <img className="image img-fluid" src="/book.png" alt="Crypto" />
+        <img className="image img-fluid" src="\RB.png" alt="Crypto" />
         <Button className="custom-button mb-2">
           Shop Now
         </Button>
