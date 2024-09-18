@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="mainPage container">
       <div classsName = "row-12"> <MyNavbar />  </div>
-      <div className="row mt-4"> 
+      <div className="row"> 
         <div className="card text-center p-4">
           <h1>Reid's Book Market</h1>
           <p>Management App For Reid's Books</p>
