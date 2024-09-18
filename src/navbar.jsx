@@ -7,7 +7,7 @@ function MyNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="/">MyWebsite</Navbar.Brand>
+        <Navbar.Brand href="/">Reid's Books</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
