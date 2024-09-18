@@ -6,9 +6,9 @@ import { Button } from 'react-bootstrap';
 
 function App() { 
   return (
-    <div className="mainPage">
-      <MyNavbar />  
-      <div className="container mt-4"> {/* Bootstrap container for spacing */}
+    <div className="mainPage container">
+      <div classsName = "row"> <MyNavbar />  </div>
+      <div className="row mt-4"> 
         <div className="card text-center p-4">
           <h1>Reid's Book Market</h1>
           <p>Management App For Reid's Books</p>
