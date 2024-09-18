@@ -1,7 +1,7 @@
 import React from 'react'; 
 import MyNavbar from './navbar.jsx'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'; 
+import './Home.css'; 
 import { Button } from 'react-bootstrap';  
 
 function App() { 
