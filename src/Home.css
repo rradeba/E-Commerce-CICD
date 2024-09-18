@@ -35,6 +35,7 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: rgb(83, 83, 83) ;
 }
 
 .image {
@@ -43,13 +44,13 @@ h1 {
 }
 
 .custom-button {
-  background-color: navy !important;
-  color: #ffffff !important;
+  background-color: rgb(63, 63, 63) !important;
+  color: #bbbaba !important;
   border: 2px solid lightgrey !important;
 }
 
 .custom-button:hover {
-  background-color: lightblue !important;
+  background-color: rgb(163, 163, 163) !important;
   border-color: black !important;
 }
 
