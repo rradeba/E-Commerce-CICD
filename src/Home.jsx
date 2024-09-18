@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap';
 function App() { 
   return (
     <div className="mainPage container">
-      <div classsName = "row"> <MyNavbar />  </div>
+      <div classsName = "row-12"> <MyNavbar />  </div>
       <div className="row mt-4"> 
         <div className="card text-center p-4">
           <h1>Reid's Book Market</h1>

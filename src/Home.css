@@ -22,7 +22,7 @@ a:hover {
   border: 2px solid black;
   margin: 15px; 
   margin-bottom: 10px; 
-  height: 100vh; 
+  height: 20vh; 
   width: auto;
   display: flex; 
   flex-direction: column; 
