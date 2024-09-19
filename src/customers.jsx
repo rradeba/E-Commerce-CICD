@@ -25,10 +25,9 @@ const CustomerForm = ({ onSubmit, formType }) => {
       {(formType === 'create' || formType === 'edit') && (
         <>
           <Form.Group className="cForm" controlId="formCustomerName">
-            <Form.Label>Customer Name</Form.Label>
+            <Form.Label className= "fw-bold mt-1">Customer Name: </Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter the Customer Name"
               value={customerName}
               onChange={(e) => setCustomerName(e.target.value)}
               required
@@ -36,10 +35,9 @@ const CustomerForm = ({ onSubmit, formType }) => {
           </Form.Group>
 
           <Form.Group className="cForm" controlId="formCustomerEmail">
-            <Form.Label className= "fw-bold">Email</Form.Label>
+            <Form.Label className= "fw-bold mt-1">Email: </Form.Label>
             <Form.Control
               type="email"
-              placeholder="Enter Email"
               value={customerEmail}
               onChange={(e) => setCustomerEmail(e.target.value)}
               required
@@ -47,10 +45,9 @@ const CustomerForm = ({ onSubmit, formType }) => {
           </Form.Group>
 
           <Form.Group className="cForm" controlId="formCustomerPhone">
-            <Form.Label>Phone Number</Form.Label>
+            <Form.Label className= "fw-bold mt-1">Phone Number: </Form.Label>
             <Form.Control
               type="tel"
-              placeholder="Enter Phone Number"
               value={customerPhone}
               onChange={(e) => setCustomerPhone(e.target.value)}
               required
@@ -62,10 +59,9 @@ const CustomerForm = ({ onSubmit, formType }) => {
       {/* Customer ID Input for find, edit, and delete */}
       {(formType === 'find' || formType === 'delete' || formType === 'edit') && (
         <Form.Group className="cForm" controlId="formCustomerID">
-          <Form.Label>Customer ID</Form.Label>
+          <Form.Label className= "fw-bold mt-1">Customer ID: </Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter Customer ID"
             value={customerID}
             onChange={(e) => setCustomerID(e.target.value)}
             required
@@ -74,9 +70,10 @@ const CustomerForm = ({ onSubmit, formType }) => {
       )}
 
       {/* Submit Button */}
-      <Button variant="primary" type="submit" className="mt-3">
+      <Button variant="primary" type="submit" className="mt-3 ml-2">
         {formType === 'create'
-          ? 'Create Customer'
+          ?
+            'Create Customer'
           : formType === 'edit'
           ? 'Edit Customer'
           : formType === 'find'
@@ -98,26 +95,25 @@ function Customers() {
 
   return (
     <Container>
-      <h1 className="m-3">Customer Forms</h1>
 
       <div>
         <h2 className="mt-3">Create Customer</h2>
-        <CustomerForm onSubmit={handleFormSubmit} formType="create" />
+        <CustomerForm onSubmit={handleFormSubmit} formType="create" className="ml-2"/>
       </div>
 
       <div>
         <h2 className="mt-3">Find Customer</h2>
-        <CustomerForm onSubmit={handleFormSubmit} formType="find" />
+        <CustomerForm onSubmit={handleFormSubmit} formType="find" className="ml-2" />
       </div>
 
       <div>
         <h2 className="mt-3">Edit Customer</h2>
-        <CustomerForm onSubmit={handleFormSubmit} formType="edit" />
+        <CustomerForm onSubmit={handleFormSubmit} formType="edit" className="ml-2"/>
       </div>
 
       <div>
         <h2 className="mt-3">Delete Customer</h2>
-        <CustomerForm onSubmit={handleFormSubmit} formType="delete" />
+        <CustomerForm onSubmit={handleFormSubmit} formType="delete" className="ml-2"/>
       </div>
     </Container>
   );

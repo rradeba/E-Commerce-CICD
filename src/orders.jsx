@@ -16,10 +16,10 @@ const OrderForm = ({ onSubmit }) => {
     <Form onSubmit={handleSubmit}>
       {/* Item Number Input */}
       <Form.Group className="cForm" controlId="formItemNumber">
-        <Form.Label>Item Number</Form.Label>
+        <Form.Label className= "fw-bold mt-1">Item Number:</Form.Label>
         <Form.Control
           type="text"
-          placeholder="Enter the 6 digit Item Number..."
+        
           value={itemNumber}
           onChange={(e) => setItemNumber(e.target.value)}
           required
@@ -28,10 +28,10 @@ const OrderForm = ({ onSubmit }) => {
 
       {/* Quantity Input */}
       <Form.Group className="cForm" controlId="formQuantity">
-        <Form.Label>Item Quantity</Form.Label>
+        <Form.Label className= "fw-bold mt-1">Item Quantity:</Form.Label>
         <Form.Control
           type="number"
-          placeholder="Enter the quantity"
+      
           value={quantity}
           onChange={(e) => setQuantity(e.target.value)}
           required

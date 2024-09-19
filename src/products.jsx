@@ -21,10 +21,10 @@ const ProductForm = ({ onSubmit, formType }) => {
     <Form onSubmit={handleSubmit}>
       {/* Item Number Input for all form types */}
       <Form.Group className="cForm" controlId="formItemID">
-        <Form.Label>Item Number</Form.Label>
+        <Form.Label className= "fw-bold mt-1">Item Number:</Form.Label>
         <Form.Control
           type="text"
-          placeholder="Enter the Item Number"
+         
           value={itemID}
           onChange={(e) => setItemID(e.target.value)}
           required
@@ -36,10 +36,10 @@ const ProductForm = ({ onSubmit, formType }) => {
         <>
           {/* Item Name Input */}
           <Form.Group className="cForm" controlId="formItemName">
-            <Form.Label>Item Name</Form.Label>
+            <Form.Label className= "fw-bold mt-1">Item Name:</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter the Item Name"
+             
               value={itemName}
               onChange={(e) => setItemName(e.target.value)}
               required
@@ -48,10 +48,10 @@ const ProductForm = ({ onSubmit, formType }) => {
 
           {/* Item Price Input */}
           <Form.Group className="cForm" controlId="formItemPrice">
-            <Form.Label>Item Price</Form.Label>
+            <Form.Label className= "fw-bold mt-1">Item Price:</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter the Item Price"
+              
               value={itemPrice}
               onChange={(e) => setItemPrice(e.target.value)}
               required
@@ -60,10 +60,10 @@ const ProductForm = ({ onSubmit, formType }) => {
 
           {/* Item Description Input */}
           <Form.Group className="cForm" controlId="formItemDescription">
-            <Form.Label>Item Description</Form.Label>
+            <Form.Label className= "fw-bold mt-1">Item Description:</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter the Item Description"
+           
               value={itemDescription}
               onChange={(e) => setItemDescription(e.target.value)}
               required
