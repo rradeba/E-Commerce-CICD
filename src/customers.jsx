@@ -36,7 +36,7 @@ const CustomerForm = ({ onSubmit, formType }) => {
           </Form.Group>
 
           <Form.Group className="cForm" controlId="formCustomerEmail">
-            <Form.Label>Email</Form.Label>
+            <Form.Label className= "fw-bold">Email</Form.Label>
             <Form.Control
               type="email"
               placeholder="Enter Email"
