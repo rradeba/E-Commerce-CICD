@@ -7,14 +7,13 @@ import { Button } from 'react-bootstrap';
 function App() { 
   return (
     <div className="mainPage container">
-      <div classsName = "row-12"> <MyNavbar />  </div>
-      <div className="row"> 
+      <div className="row mt-3 justify-content-center"> 
         <div className="card text-center p-4">
           <h1>Reid's Book Market</h1>
           <p>Management App For Reid's Books</p>
           <img className="image img-fluid" src="/BookStore.png" alt="Book Store" />
           <Button className="custom-button mt-3 mb-2">
-            Shop Now
+            Login
           </Button>
         </div>
       </div>

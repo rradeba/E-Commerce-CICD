@@ -11,9 +11,9 @@ function MyNavbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">Customers</Nav.Link>
-            <Nav.Link href="/services">Products</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link> 
+            <Nav.Link href="/customers">Customers</Nav.Link>
+            <Nav.Link href="/products">Products</Nav.Link>
+            <Nav.Link href="/orders">Orders</Nav.Link> 
           </Nav>
         </Navbar.Collapse>
       </Container>
